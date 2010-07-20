@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="instructions">Enter text:</string>
+	<string name="speak_btn_text">Speak!</string>
+    <string name="app_name">TextToVoiceDemo</string>
+</resources>
