@@ -45,7 +45,8 @@ public class TextToVoiceDemo extends Activity {
 	public void speakText(String text) {
 		try {
 			mPlayer.setDataSource("http://translate.google.com/translate_tts?tl=en&q="+URLEncoder.encode(text));
-			mPlayer.prepare();		    
+			mPlayer.prepare();
+			mPlayer.start();
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (IllegalStateException e) {
@@ -53,6 +54,5 @@ public class TextToVoiceDemo extends Activity {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		mPlayer.start();
 	}
 }
